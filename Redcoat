@@ -1,0 +1,632 @@
+---SCRIPTED BY rEDCOAT
+
+local Library = {}
+function Library:CreateWindow(GameText)
+    if game.CoreGui:FindFirstChild("Main") then
+        game.CoreGui:FindFirstChild("Main"):Destroy()
+    end
+
+    local Main = Instance.new("ScreenGui")
+    local outline = Instance.new("ScreenGui")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+    local THEHUBM = Instance.new("Frame")
+    local outline = Instance.new("Frame")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+    local UICorner = Instance.new("UICorner")
+    local outline = Instance.new("UICorner")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+    local topbar = Instance.new("Frame")
+    local outline = Instance.new("Frame")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+    local Frame = Instance.new("Frame")
+    local outline = Instance.new("Frame")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+    local UICorner_2 = Instance.new("UICorner")
+    local outline = Instance.new("UICorner")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+    local NAV = Instance.new("Frame")
+    local outline = Instance.new("Frame")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+    local TABSHOLDER = Instance.new("ScrollingFrame")
+    local outline = Instance.new("ScrollingFrame")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+    local UIPadding = Instance.new("UIPadding")
+    local outline = Instance.new("UIPadding")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+    local UIListLayout = Instance.new("UIListLayout")
+    local outline = Instance.new("UIListLayout")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+    local Tabex1 = Instance.new("Frame")
+    local outline = Instance.new("Frame")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+    local tabex2 = Instance.new("Frame")
+    local outline = Instance.new("Frame")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+    local TITLEBAR = Instance.new("TextLabel")
+    local outline = Instance.new("TextLabel")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+    local Elementsholder = Instance.new("Frame")
+    local outline = Instance.new("Frame")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+    local TextButton = Instance.new("TextButton")
+    local outline = Instance.new("TextButton")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+
+    Main.Name = "Main"
+    Main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+    THEHUBM.Name = "THEHUBM"
+    THEHUBM.Parent = Main
+    THEHUBM.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+    THEHUBM.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    THEHUBM.BorderSizePixel = 0
+    THEHUBM.Position = UDim2.new(0.291027904, 0, 0.258801907, 0)
+    THEHUBM.Size = UDim2.new(0, 306, 0, 206)
+
+    UICorner.Parent = THEHUBM
+
+    topbar.Name = "topbar"
+    topbar.Parent = THEHUBM
+    topbar.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+    topbar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    topbar.BorderSizePixel = 0
+    topbar.Size = UDim2.new(0, 306, 0, 26)
+
+    Frame.Parent = topbar
+    Frame.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+    Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    Frame.BorderSizePixel = 0
+    Frame.Position = UDim2.new(0, 0, 0.769230783, 0)
+    Frame.Size = UDim2.new(0, 306, 0, 12)
+
+    UICorner_2.Parent = topbar
+
+    NAV.Name = "NAV"
+    NAV.Parent = THEHUBM
+    NAV.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+    NAV.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    NAV.BorderSizePixel = 0
+    NAV.Position = UDim2.new(0, 0, 0.155340031, 0)
+    NAV.Size = UDim2.new(0, 100, 0, 174)
+
+    TABSHOLDER.Name = "TABSHOLDER"
+    TABSHOLDER.Parent = NAV
+    TABSHOLDER.Active = true
+    TABSHOLDER.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    TABSHOLDER.BackgroundTransparency = 1.000
+    TABSHOLDER.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    TABSHOLDER.BorderSizePixel = 0
+    TABSHOLDER.Size = UDim2.new(0, 100, 0, 173)
+    TABSHOLDER.ScrollBarThickness = 0
+
+    UIPadding.Parent = TABSHOLDER
+    UIPadding.PaddingBottom = UDim.new(0, 1)
+    UIPadding.PaddingTop = UDim.new(0, 3)
+
+    UIListLayout.Parent = TABSHOLDER
+    UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+    UIListLayout.Padding = UDim.new(0, 1)
+
+    Tabex1.Name = "Tab ex1"
+    Tabex1.Parent = NAV
+    Tabex1.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+    Tabex1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    Tabex1.BorderSizePixel = 0
+    Tabex1.Position = UDim2.new(1, 0, -0.00574712642, 0)
+    Tabex1.Size = UDim2.new(0, 1, 0, 174)
+
+    tabex2.Name = "tabex2"
+    tabex2.Parent = NAV
+    tabex2.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+    tabex2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    tabex2.BorderSizePixel = 0
+    tabex2.Position = UDim2.new(0, 0, -0.00574747706, 0)
+    tabex2.Size = UDim2.new(0, 306, 0, 1)
+
+    Elementsholder.Name = "Elements holder"
+    Elementsholder.Parent = THEHUBM
+    Elementsholder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Elementsholder.BackgroundTransparency = 1.000
+    Elementsholder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    Elementsholder.BorderSizePixel = 0
+    Elementsholder.Position = UDim2.new(0.336601317, 0, 0.155340031, 0)
+    Elementsholder.Size = UDim2.new(0, 203, 0, 172)
+
+    TITLEBAR.Name = "TITLE BAR"
+    TITLEBAR.Parent = THEHUBM
+    TITLEBAR.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    TITLEBAR.BackgroundTransparency = 1.000
+    TITLEBAR.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    TITLEBAR.BorderSizePixel = 0
+    TITLEBAR.Position = UDim2.new(0, 0, -2.22215377e-07, 0)
+    TITLEBAR.Size = UDim2.new(0, 101, 0, 30)
+    TITLEBAR.Font = Enum.Font.Unknown
+    TITLEBAR.Text = GameText
+    TITLEBAR.TextColor3 = Color3.fromRGB(255, 255, 255)
+    TITLEBAR.TextSize = 14.000
+
+    TextButton.Parent = THEHUBM
+    TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    TextButton.BackgroundTransparency = 1.000
+    TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    TextButton.BorderSizePixel = 0
+    TextButton.Position = UDim2.new(0.846405208, 0, 0.00970896054, 0)
+    TextButton.Size = UDim2.new(0, 40, 0, 29)
+    TextButton.Font = Enum.Font.SourceSansBold
+    TextButton.Text = "X"
+    TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+    TextButton.TextSize = 14.000
+TextButton.MouseButton1Click:Connect(function()
+THEHUBM:Destroy()
+end)
+    -- Scripts:
+
+    local function AQJN_fake_script() -- THEHUBM.Dragify
+        local script = Instance.new("LocalScript", THEHUBM)
+
+        local UIS = game:GetService("UserInputService")
+        local dragSpeed = -math.huge
+
+        local dragToggle = nil
+        local dragInput = nil
+        local dragStart = nil
+        local dragPos = nil
+
+        function dragify(Frame)
+            function updateInput(input)
+                local Delta = input.Position - dragStart
+                local Position =
+                    UDim2.new(
+                    startPos.X.Scale,
+                    startPos.X.Offset + Delta.X,
+                    startPos.Y.Scale,
+                    startPos.Y.Offset + Delta.Y
+                )
+                script.Parent.Position = Position
+            end
+
+            Frame.InputBegan:Connect(
+                function(input)
+                    if
+                        (input.UserInputType == Enum.UserInputType.MouseButton1 or
+                            input.UserInputType == Enum.UserInputType.Touch) and
+                            UIS:GetFocusedTextBox() == nil
+                     then
+                        dragToggle = true
+                        dragStart = input.Position
+                        startPos = Frame.Position
+                        input.Changed:Connect(
+                            function()
+                                if input.UserInputState == Enum.UserInputState.End then
+                                    dragToggle = false
+                                end
+                            end
+                        )
+                    end
+                end
+            )
+
+            Frame.InputChanged:Connect(
+                function(input)
+                    if
+                        input.UserInputType == Enum.UserInputType.MouseMovement or
+                            input.UserInputType == Enum.UserInputType.Touch
+                     then
+                        dragInput = input
+                    end
+                end
+            )
+
+            game:GetService("UserInputService").InputChanged:Connect(
+                function(input)
+                    if input == dragInput and dragToggle then
+                        updateInput(input)
+                    end
+                end
+            )
+        end
+
+        dragify(script.Parent)
+    end
+    coroutine.wrap(AQJN_fake_script)()
+
+    local tabs = {}
+
+    local first = true
+    local currentTab = nil
+
+    function tabs:CreateTab(TabText)
+        local TABS = Instance.new("TextButton")
+    local outline = Instance.new("TextButton")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+        local UIPadding_2 = Instance.new("UIPadding")
+    local outline = Instance.new("UIPadding")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+        local ScrollingFrame = Instance.new("ScrollingFrame")
+    local outline = Instance.new("ScrollingFrame")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+        local UIListLayout_2 = Instance.new("UIListLayout")
+    local outline = Instance.new("UIListLayout")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+        local Elements = Instance.new("Frame")
+    local outline = Instance.new("Frame")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+        local UIPadding_3 = Instance.new("UIPadding")
+    local outline = Instance.new("UIPadding")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+
+        Elements.Name = "Elements"
+        Elements.Parent = Elementsholder
+        Elements.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        Elements.BackgroundTransparency = 1.000
+        Elements.BorderColor3 = Color3.fromRGB(0, 0, 0)
+        Elements.BorderSizePixel = 0
+        Elements.Size = UDim2.new(0, 203, 0, 173)
+
+        TABS.Name = "TABS"
+        TABS.Parent = TABSHOLDER
+        TABS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        TABS.BackgroundTransparency = 1.000
+        TABS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+        TABS.BorderSizePixel = 0
+        TABS.Position = UDim2.new(0, 0, 0.0769230798, 0)
+        TABS.Size = UDim2.new(0, 100, 0, 23)
+        TABS.Font = Enum.Font.SourceSansBold
+        TABS.Text = TabText
+        TABS.TextColor3 = Color3.fromRGB(255, 255, 255)
+        TABS.TextSize = 14.000
+
+        UIPadding_2.Parent = TABS
+        UIPadding_2.PaddingBottom = UDim.new(0, 8)
+
+        UIListLayout_2.Parent = ScrollingFrame
+        UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+        UIListLayout_2.Padding = UDim.new(0, 8)
+
+        UIPadding_3.Parent = ScrollingFrame
+        UIPadding_3.PaddingBottom = UDim.new(0, 6)
+        UIPadding_3.PaddingLeft = UDim.new(0, 6)
+        UIPadding_3.PaddingTop = UDim.new(0, 6)
+
+        ScrollingFrame.Parent = Elements
+        ScrollingFrame.Active = true
+        ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        ScrollingFrame.BackgroundTransparency = 1.000
+        ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+        ScrollingFrame.BorderSizePixel = 0
+        ScrollingFrame.Size = UDim2.new(0, 203, 0, 173)
+        ScrollingFrame.ScrollBarThickness = 0
+
+if first then
+			first = false
+			Elements.Visible = true
+		else
+			Elements.Visible = false
+		end
+		
+        TABS.MouseButton1Click:Connect(
+            function()
+                for i, v in next, Elementsholder:GetChildren() do
+                    v.Visible = false
+                end
+                Elements.Visible = true
+            end
+        )
+
+        local elements = {}
+
+        function elements:CreateLabel(labelname)
+            local Label = Instance.new("TextLabel")
+    local outline = Instance.new("TextLabel")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+
+            Label.Name = labelname
+            Label.Parent = ScrollingFrame
+            Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+            Label.BackgroundTransparency = 1.000
+            Label.BorderColor3 = Color3.fromRGB(0, 0, 0)
+            Label.BorderSizePixel = 0
+            Label.Position = UDim2.new(0, 0, 0.0683229789, 0)
+            Label.Size = UDim2.new(0, 190, 0, 27)
+            Label.Font = Enum.Font.SourceSansBold
+            Label.Text = labelname
+            Label.TextColor3 = Color3.fromRGB(255, 255, 255)
+            Label.TextSize = 14.000
+        end
+
+        function elements:CreateButton(buttoname, Callback)
+               local Button = Instance.new("TextButton")
+    local outline = Instance.new("TextButton")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+               local UICorner_3 = Instance.new("UICorner")
+    local outline = Instance.new("UICorner")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+
+                Button.Name = buttoname
+                Button.Parent = ScrollingFrame
+                Button.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+                Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+                Button.BorderSizePixel = 0
+                Button.Position = UDim2.new(0.0304568522, 0, 0.229813665, 0)
+                Button.Size = UDim2.new(0, 190, 0, 25)
+                Button.Font = Enum.Font.SourceSansBold
+                Button.Text = buttoname
+                Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+                Button.TextSize = 14.000
+
+                UICorner_3.Parent = Button
+
+                Button.MouseButton1Click:Connect(
+                    function()
+                        Callback()
+                    end
+                )
+        end
+
+        function elements:CreateSlider(SliderText, max, Callback)
+                    local Sliders = Instance.new("Frame")
+    local outline = Instance.new("Frame")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+                    local UICorner_4 = Instance.new("UICorner")
+    local outline = Instance.new("UICorner")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+                    local SLIDERNAME = Instance.new("TextLabel")
+    local outline = Instance.new("TextLabel")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+                    local CALC = Instance.new("TextLabel")
+    local outline = Instance.new("TextLabel")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+                    local SLIDERBUTTON = Instance.new("TextButton")
+    local outline = Instance.new("TextButton")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+                    local UICorner_5 = Instance.new("UICorner")
+    local outline = Instance.new("UICorner")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+                    local sliderslide = Instance.new("Frame")
+    local outline = Instance.new("Frame")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+                    local UICorner_6 = Instance.new("UICorner")
+    local outline = Instance.new("UICorner")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+
+                    Sliders.Name = "Sliders"
+                    Sliders.Parent = ScrollingFrame
+                    Sliders.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+                    Sliders.BorderColor3 = Color3.fromRGB(0, 0, 0)
+                    Sliders.BorderSizePixel = 0
+                    Sliders.Position = UDim2.new(0, 0, 0.422360241, 0)
+                    Sliders.Size = UDim2.new(0, 190, 0, 52)
+
+                    UICorner_4.Parent = Sliders
+
+                    SLIDERNAME.Name = "SLIDERNAME"
+                    SLIDERNAME.Parent = Sliders
+                    SLIDERNAME.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                    SLIDERNAME.BackgroundTransparency = 1.000
+                    SLIDERNAME.BorderColor3 = Color3.fromRGB(0, 0, 0)
+                    SLIDERNAME.BorderSizePixel = 0
+                    SLIDERNAME.Position = UDim2.new(-0.147368416, 0, 0.0384615399, 0)
+                    SLIDERNAME.Size = UDim2.new(0, 110, 0, 21)
+                    SLIDERNAME.Font = Enum.Font.SourceSansBold
+                    SLIDERNAME.Text = SliderText
+                    SLIDERNAME.TextColor3 = Color3.fromRGB(255, 255, 255)
+                    SLIDERNAME.TextSize = 14.000
+
+                    CALC.Name = "CALC"
+                    CALC.Parent = SLIDERNAME
+                    CALC.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                    CALC.BackgroundTransparency = 1.000
+                    CALC.BorderColor3 = Color3.fromRGB(0, 0, 0)
+                    CALC.BorderSizePixel = 0
+                    CALC.Position = UDim2.new(1.43444991, 0, -0.0567765012, 0)
+                    CALC.Size = UDim2.new(0, 67, 0, 21)
+                    CALC.Font = Enum.Font.SourceSansBold
+                    CALC.Text = "0"
+                    CALC.TextColor3 = Color3.fromRGB(255, 255, 255)
+                    CALC.TextSize = 14.000
+
+                    SLIDERBUTTON.Name = "SLIDERBUTTON"
+                    SLIDERBUTTON.Parent = Sliders
+                    SLIDERBUTTON.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+                    SLIDERBUTTON.BorderColor3 = Color3.fromRGB(0, 0, 0)
+                    SLIDERBUTTON.BorderSizePixel = 0
+                    SLIDERBUTTON.Position = UDim2.new(0, 0, 0.557692289, 0)
+                    SLIDERBUTTON.Size = UDim2.new(0, 190, 0, 12)
+                    SLIDERBUTTON.Font = Enum.Font.SourceSans
+                    SLIDERBUTTON.TextColor3 = Color3.fromRGB(0, 0, 0)
+                    SLIDERBUTTON.TextSize = 14.000
+                    SLIDERBUTTON.TextTransparency = 1.000
+
+                    UICorner_5.Parent = SLIDERBUTTON
+
+                    sliderslide.Name = "slider slide"
+                    sliderslide.Parent = SLIDERBUTTON
+                    sliderslide.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                    sliderslide.BorderColor3 = Color3.fromRGB(0, 0, 0)
+                    sliderslide.BorderSizePixel = 0
+                    sliderslide.Size = UDim2.new(0, 6, 0, 12)
+
+                    UICorner_6.Parent = sliderslide
+
+                    local isDragging = false
+
+                    SLIDERBUTTON.InputBegan:Connect(
+                        function(input)
+                            if
+                                input.UserInputType == Enum.UserInputType.Touch or
+                                    input.UserInputType == Enum.UserInputType.MouseButton1
+                             then
+                                isDragging = true
+                            end
+                        end
+                    )
+
+                    game:GetService("UserInputService").InputEnded:Connect(
+                        function(input)
+                            if
+                                input.UserInputType == Enum.UserInputType.Touch or
+                                    input.UserInputType == Enum.UserInputType.MouseButton1
+                             then
+                                isDragging = false
+                            end
+                        end
+                    )
+
+                    game:GetService("RunService").RenderStepped:Connect(
+                        function()
+                            if isDragging then
+                                local mousePosition = game:GetService("UserInputService"):GetMouseLocation()
+                                local sliderPosition = SLIDERBUTTON.AbsolutePosition
+                                local sliderWidth = SLIDERBUTTON.AbsoluteSize.X
+                                local fillWidth = math.clamp(mousePosition.X - sliderPosition.X, 0, sliderWidth)
+                                sliderslide.Size = UDim2.new(0, fillWidth, 1, 0)
+
+                                -- Calculate and display value label
+                                local value = fillWidth / sliderWidth
+                                local minValue = 0
+                                local maxValue = max
+                                local displayValue = math.floor(minValue + (maxValue - minValue) * value, 2)
+                                CALC.Text = tostring(displayValue)
+                                Callback(displayValue)
+                            end
+                        end
+                    )
+                end
+
+                function elements:CreateBox(boxname, Callbaclk)
+                    local TExtBox = Instance.new("Frame")
+    local outline = Instance.new("Frame")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+                    local UICorner_7 = Instance.new("UICorner")
+    local outline = Instance.new("UICorner")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+                    local TextLabel = Instance.new("TextLabel")
+    local outline = Instance.new("TextLabel")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+                    local TextBox = Instance.new("TextBox")
+    local outline = Instance.new("TextBox")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+                    local UICorner_8 = Instance.new("UICorner")
+    local outline = Instance.new("UICorner")
+    outline.BorderColor3 = Color3.new(1, 1, 1) -- White color
+    outline.BorderSizePixel = 1
+
+
+                    TExtBox.Name = "TExtBox"
+                    TExtBox.Parent = ScrollingFrame
+                    TExtBox.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+                    TExtBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+                    TExtBox.BorderSizePixel = 0
+                    TExtBox.Position = UDim2.new(0, 0, 0.795031071, 0)
+                    TExtBox.Size = UDim2.new(0, 190, 0, 33)
+
+                    UICorner_7.Parent = TExtBox
+
+                    TextLabel.Parent = TExtBox
+                    TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                    TextLabel.BackgroundTransparency = 1.000
+                    TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+                    TextLabel.BorderSizePixel = 0
+                    TextLabel.Position = UDim2.new(0.0315789469, 0, 0.151515156, 0)
+                    TextLabel.Size = UDim2.new(0, 75, 0, 22)
+                    TextLabel.Font = Enum.Font.SourceSansBold
+                    TextLabel.Text = boxname
+                    TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+                    TextLabel.TextSize = 14.000
+
+                    TextBox.Parent = TExtBox
+                    TextBox.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+                    TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+                    TextBox.BorderSizePixel = 0
+                    TextBox.Position = UDim2.new(0.677839756, 0, 0.121212125, 0)
+                    TextBox.Size = UDim2.new(0, 43, 0, 25)
+                    TextBox.Font = Enum.Font.SourceSans
+                    TextBox.Text = ""
+                    TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+                    TextBox.TextSize = 14.000
+
+                    UICorner_8.Parent = TextBox
+
+                    TextBox.FocusLost:Connect(
+                        function()
+                            Callbaclk(TextBox.Text)
+                        end
+                    )
+                end
+            return elements
+        end
+    return tabs
+end
+return Library
